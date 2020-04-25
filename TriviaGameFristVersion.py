@@ -79,6 +79,8 @@ class Trivia(object):
             self.colors = [white, white, white, white]
             self.current += 6
             if self.current >= self.total:
+                if self.score == self.total -1:
+                    sys.exit()
                 self.current = 0
 
 
